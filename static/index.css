@@ -1,0 +1,36 @@
+#main {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+#monitoring {
+    display: none;
+}
+
+#activities {
+    display: none;
+}
+
+#summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#graph {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#graph_options ul {
+    list-style: none;
+}
+
+#navbar {
+    height: 98vh;
+    overflow: scroll;
+}

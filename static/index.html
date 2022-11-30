@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+        <script src="index.js" defer></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#summary" class="nav-link">Summary</a></li>
+                        <li><a href="#monitoring" class="nav-link">Monitoring</a></li>
+                        <hr>
+                        <li>Activities</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="main-content">
+                <div id="summary">
+                    <div id="title"><h1>Summary</h1></div>
+                    <div id="figures_l">
+                        <ul>
+                            <li>total activities: <strong id="total_activities"></strong></li>
+                            <li>total distance: <strong id="total_distance"></strong></li>
+                            <li>total time: <strong id="total_time"></strong></li>
+                        </ul>
+                    </div>
+                    <div id="figures_c">
+                        <ul>
+                            <li>fastest 1km: </li>
+                            <li>fastest 1mi: </li>
+                            <li>fastest 5km: </li>
+                            <li>fastest 10km: </li>
+                            <li>fastest hm: </li>
+                            <li>fastest fm: </li>
+                        </ul>
+                    </div>
+                    <div id="figures_r">
+                        <ul>
+                            <li>longest distance run: </li>
+                            <li>longest duration run: </li>
+                        </ul>
+                    </div>
+                    <div id="graph"></div>
+                    <div id="graph_options">
+                        <ul>
+                            <li>
+                                <label for="group_by">Grouping</label>
+                                <select id="group_by" name="cars">
+                                    <option value="none">None</option>
+                                    <option value="week">Weekly</option>
+                                    <option value="month">Monthly</option>
+                                    <option value="year">Yearly</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="total_distance">Total distance</label> 
+                                <input type="radio" name="scatter" id="total_distance" checked>
+                            </li>
+                            <li>
+                                <label for="total_timer_time">Total time</label> 
+                                <input type="radio" name="scatter" id="total_timer_time">
+                            </li>
+                            <li>
+                                <label for="enhanced_avg_speed">Average speed</label> 
+                                <input type="radio" name="scatter" id="enhanced_avg_speed">
+                            </li>
+                            <li>
+                                <label for="avg_heart_rate">Average heartrate</label> 
+                                <input type="radio" name="scatter" id="avg_heart_rate">
+                            </li>
+                            <li>
+                                <label for="enhanced_max_speed">Max speed</label> 
+                                <input type="radio" name="scatter" id="enhanced_max_speed">
+                            </li>
+                            <li>
+                                <label for="max_heart_rate">Max heartrate</label> 
+                                <input type="radio" name="scatter" id="max_heart_rate">
+                            </li>
+                            <li>
+                                <label for="total_ascent">Total ascent</label> 
+                                <input type="radio" name="scatter" id="total_ascent">
+                            </li>
+                            <li>
+                                <label for="total_descent">Total descent</label> 
+                                <input type="radio" name="scatter" id="total_descent">
+                            </li>
+                            <li>
+                                <label for="avg_running_cadence">Avg cadence</label> 
+                                <input type="radio" name="scatter" id="avg_running_cadence">
+                            </li>
+                            <li>
+                                <label for="total_training_effect">Total aerobic training effect</label> 
+                                <input type="radio" name="scatter" id="total_training_effect">
+                            </li>
+                            <li>
+                                <label for="total_anaerobic_training_effect">Total anaerobic training effect</label> 
+                                <input type="radio" name="scatter" id="total_anaerobic_training_effect">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="activities">
+                    <p>activities</p>
+                </div>
+                <div id="monitoring">
+                    <p>monitoring</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

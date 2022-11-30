@@ -1,0 +1,6 @@
+__pycache__
+env
+FitFiles
+images/map.png
+fitdata.db
+test.ipynb
