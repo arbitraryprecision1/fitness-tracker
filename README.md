@@ -1,4 +1,4 @@
-# FitFile Webapp (Work in Progress)
+# FitFile Fitness Tracker Webapp
 A hobby project to view running watch data locally in the browser. 
 Includes a CLI for loading fitfiles into db and then running the local server.
 
@@ -25,11 +25,9 @@ CLI handles fitfile problems and adds valid entries to db
 
 # Installation and Config
 - python 3.8.10 used in development
-- install fitparser via pip
+- install fitparse via pip
 - alternatively use a virtual python environment https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
-
 - run with `python app.py`
-
 
 # To-Do
 - package for distribution
@@ -39,6 +37,7 @@ CLI handles fitfile problems and adds valid entries to db
 - smarten up with css
 - convert units to more easily understood ones (eg. m/s to mins per km)
 - add view for monitoring data
+- add trendlines/predictions for data
 - use gps location data to plot runs on map
     - several options for displaying gps data in general
         - https://github.com/gboeing/osmnx, needs docker installation and be careful not to query osm api too often
